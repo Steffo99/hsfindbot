@@ -20,6 +20,10 @@ lib64/
 parts/
 sdist/
 var/
+Include/
+Lib/
+Scripts/
+tcl/
 *.egg-info/
 .installed.cfg
 *.egg
@@ -137,3 +141,4 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+pip-selfcheck.json
