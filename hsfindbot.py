@@ -4,10 +4,12 @@ import requests
 import logging
 
 telegramkey = open("telegramkey.txt", "r")
-updater = Updater(telegramkey)
+updater = Updater(telegramkey.read())
 telegramkey.close()
 
-mashapekey = open("mashapekey.txt", "r")
+mfile = open("mashapekey.txt", "r")
+mashapekey = mfile.read()
+mfile.close()
 
 logging.basicConfig(level=logging.DEBUG, format="%(asctime)s - %(name)s - %(levelname)s - %(message)s")
 
